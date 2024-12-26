@@ -5,28 +5,28 @@
                 <div class="card shadow">
                     <div class="card-header">
                         <h2 class="fw-bold text-secondary">
-                            User Profile
+                            <i class="fa-solid fa-circle-user"></i> User Profile
                         </h2>
                     </div>
                     <div class="card-body p-4">
                         <table class="table table-striped">
                             <tr>
-                                <th>Name</th>
+                                <th><i class="fa-solid fa-user"></i> Name</th>
                                 <th><%= user.name %></th>
                             </tr>
                             <tr>
-                                <th>Email</th>
+                                <th><i class="fa-solid fa-envelope"></i> Email</th>
                                 <td><%= user.email %></td>
                             </tr>
                             <tr>
-                                <th>Created At</th>
+                                <th><i class="fa-solid fa-calendar-days"></i> Created At</th>
                                 <td><%= user.createdAt %></td>
                             </tr>
                             <tr>
-                                <th>Logout</th>
+                                <th><i class="fa-solid fa-right-from-bracket"></i> Logout</th>
                                 <td>
                                     <form action="/logout" method="post">
-                                        <input type="submit" value="logout" class="btn btn-danger">
+                                        <input type="submit" value="logout" class="btn btn-danger btn-sm">
                                     </form>
                                 </td>
                             </tr>
