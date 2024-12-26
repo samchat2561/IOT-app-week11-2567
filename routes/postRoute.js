@@ -23,9 +23,9 @@ const upload = multer({ storage: storage })
 
 //route for home page
 router.get('/', async (req, res) => {
-    
+
     const page = parseInt(req.query.page) || 1;
-    const limit = 2;
+    const limit = 4;
 
     const startIndex = (page - 1) * limit
     const endIndex = page * limit
@@ -48,7 +48,7 @@ router.get('/', async (req, res) => {
         prevPage: page - 1
     }
 
-    res.render('index', { title: 'Home Page', active: 'home', posts })
+    res.render('index', { title: 'Home Page', active: 'home', posts, pagination })
 })
 
 //route for posts page
