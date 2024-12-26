@@ -4,8 +4,12 @@
         <div class="col-lg-8 mx-auto">
             <div class="card shadow">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h2 class="fw-bold text-secondary">Edit Posts</h2>
-                    <a href="http://" class="btn btn-danger btn-sm">BACK</a>
+                    <h2 class="fw-bold text-secondary">
+                        <i class="fa-solid fa-pen-to-square"></i> Edit Posts
+                    </h2>
+                    <a href="/posts" class="btn btn-danger btn-sm">
+                        <i class="fa-solid fa-backward"></i> BACK
+                    </a>
                 </div>
                 <div class="card-body">
                     <form action="/update-post/<%= post._id %>" method="post" enctype="multipart/form-data">
@@ -29,7 +33,9 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-success w-100">Update Post</button>
+                        <button type="submit" class="btn btn-success w-100">
+                            <i class="fa-solid fa-pen-to-square"></i> Update Post
+                        </button>
                     </form>
                 </div>
             </div>
